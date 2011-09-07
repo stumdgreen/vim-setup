@@ -28,16 +28,17 @@ set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
-set relativenumber
+set number
 set mouse=a
 cmap W w
-nnoremap <F5> :GundoToggle<CR>
+nnoremap <leader>un :GundoToggle<CR>
 
 " tame searching
 set gdefault
 set incsearch
 set showmatch
 set hlsearch
+set ignorecase
 nnoremap <leader><space> :noh<cr>
 nnoremap <leader>a :Ack<space>
 nnoremap <tab> %
@@ -66,7 +67,7 @@ if has("gui_running")
     colorscheme mustang
 endif
 " nerd tree
-map <F2> :NERDTreeToggle<CR>
+map <leader>nt :NERDTreeToggle<CR>
 
 function! NERDTreeQuit()
   redir => buffersoutput
