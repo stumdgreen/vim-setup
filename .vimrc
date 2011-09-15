@@ -12,6 +12,11 @@ set softtabstop=4
 set shiftwidth=4
 set smarttab
 set expandtab
+set listchars=tab:▸\ ,eol:¬
+highlight NonText guifg=#4a4a59
+highlight SpecialKey guifg=#4a4a59
+set list
+nmap <leader>hi :set list!<CR>
 "set autoindent
 
 " make awesomer
