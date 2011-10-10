@@ -17,6 +17,15 @@ highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
 set list
 nmap <leader>hi :set list!<CR>
+function TabToggle()
+  if &expandtab
+    set noexpandtab
+  else
+    set expandtab
+  endif
+endfunction
+nmap <leader>ut mz:execute TabToggle()<CR>
+
 "set autoindent
 
 " make awesomer
