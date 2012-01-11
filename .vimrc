@@ -106,6 +106,7 @@ function! NERDTreeQuit()
   endif
 endfunction
 autocmd WinEnter * call NERDTreeQuit()
+let g:NERDTreeWinSize = 40
 
 " Smarty
 au BufRead,BufNewFile *.tpl set filetype=smarty
